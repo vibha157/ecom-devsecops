@@ -1,0 +1,22 @@
+name: DevSecOps Security Pipeline
+
+on:
+  push:
+    branches: ["*"]
+
+jobs:
+  build-and-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t ecom-app:latest .
+
+      - name: Trivy security scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ecom-app:latest
+          format: table
+          severity: CRITICAL,HIGH

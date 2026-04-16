@@ -1,0 +1,23 @@
+{
+  "name": "ecom-devsecops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibha157/ecom-devsecops.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vibha157/ecom-devsecops/issues"
+  },
+  "homepage": "https://github.com/vibha157/ecom-devsecops#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
